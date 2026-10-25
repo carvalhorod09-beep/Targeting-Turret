@@ -1,8 +1,8 @@
 An Arduino-controlled dart turret that calculates the launch angle needed to hit a target. The operator aims the laser at the target using a joystick, an ultrasonic sensor measures the distance, and the Arduino solves the projectile equation and sets the barrel to the calculated angle. A servo-driven linear actuator feeds darts into two DC-powered flywheels to launch them.
 
-Demo video: [add link here, or write "Video 1 in my MIT SlideRoom portfolio"]
+Demo video lovate in docs/turretdemo.MOV
 
-Turret photo
+Turret photo located in docs/turret.jpg
 
 How it works
 Aim. The joystick moves the turret: one axis rotates the base with a stepper motor (through a custom 3:1 planetary gearbox), and the other tilts the barrel with a servo. A laser mounted alongside the barrel shows where the turret is pointing.
@@ -36,7 +36,7 @@ Serial Monitor baud rate: 9600.
 A servo angle of 90° means the barrel is horizontal.
 
 Hardware
-Arduino [add model]
+Arduino Nano
 2× DC motors (flywheels), driven by a TB6612FNG motor driver
 Stepper motor, driven by an A4988 driver
 2× servos (barrel tilt and dart feed)
@@ -45,7 +45,7 @@ Laser module
 Analogue joystick with push button
 3D-printed parts (PLA) from my own CAD designs
 
-The full schematic is in docs/schematic.pdf.
+The full schematic is in docs/schematic.jpg.
 
 Pin map
 Component	Pin
